@@ -3,9 +3,10 @@ package at.kaindorf.bank.pojos;
 import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
-import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+@Data
 @Entity
 @DiscriminatorValue("GIRO")
 @EqualsAndHashCode(callSuper = true)
