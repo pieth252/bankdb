@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer selection</title>
+</head>
+<body>
+  <h1>Customer selection</h1>
+
+  <form th:action="" method="" th:object="${}">
+      <label th:for="lastname">Lastname: </label>
+      <input th:type="text" name="lastname" th:field="${}">
+      <span class="validationError" th:if="${#fields.hasErrors('employeeNo')}" th:errors="*{employeeNo}"></span>
+      <br>
+      <br>
+      <div>
+          <ul class="customer-list">
+              <input type="radio"> Bergmann, Elias
+              <input type="radio"> Bergmann, Jakob
+          </ul>
+      </div>
+
+      <button onclick="submit()">show customer details</button>
+  </form>
+
+</body>
+</html>

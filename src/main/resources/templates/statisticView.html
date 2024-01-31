@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Customer Overview</h1>
+
+<div>
+    <p>Customer:</p>
+    <p>Address\:</p>
+</div>
+
+<h2>Giro Accounts</h2>
+
+<!--
+<table>
+    <tr>
+
+    </tr>
+    <tr th:each="giroAccount : <span class="math-inline">\{customer\.giroAccounts\}"\>
+    <td th\:text\="</span>{giroAccount.number}">121791</td>
+    <td th:text="<span class="math-inline">\{giroAccount\.balance\}"\>€ 7,984\.55</td\>
+    <td th\:text\="</span>{giroAccount.overdraftLimit}">€ 1,000.00</td>
+    <td th:text="<span class="math-inline">\{giroAccount\.debitRate\}"\>8\.50%</td\>
+    <td th\:text\="</span>{giroAccount.creditRate}">12.50%</td>
+    <td>+</td>
+-->
+
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Balance</th>
+            <th>Overdraft Limit</th>
+            <th>Debit Rate</th>
+            <th>Credit Rate</th>
+            <th>Interest</th>
+        </tr>
+        <!--<tr th:each="emp : ${employees}">
+            <td th:text="${emp.firstname + ' ' + emp.lastname}">Name</td>
+            <td th:text="${#temporals.format(emp.dateOfBirth, 'dd-MM-yyyy')}">Birthdate</td>
+            <td th:text="${emp.gender}">Gender</td>
+            <td th:text="${emp.employeeNo}">Employee-No</td>
+            <td th:text="${emp.department.deptName}">Dept Name</td>
+            <td>
+                <form th:action="@{/department/removeEmployee}" method="post">
+                    <button th:if="${emp.employeeNo != employeeNo}" name="employeeNo" th:value="${emp.employeeNo}" onclick="submit()">remove</button>
+                    <input type="hidden" name="deptNo" th:value="${emp.department.deptNo}">
+                </form>
+            </td>
+        </tr>-->
+    </table>
